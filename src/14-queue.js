@@ -17,13 +17,12 @@ class Queue {
     this.tail = null;
     this.queue = [];
     this.length = 0;
+    this.list = null;
   }
 
   enqueue(value) {
     const nod = new ListNode(value);
-    console.log('nv ', nod.value);
-    // console.log('ntv ', nod.this.value);
-    console.log('tv ', this.value);
+    this.list = nod;
     const node = value;
     this.top = node;
     this.queue.push(node);
